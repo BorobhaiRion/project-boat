@@ -160,6 +160,42 @@ section h2 {
     background: #f4f4f4;
 }
 
+#about-content p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+#about-content ul {
+    list-style: disc inside;
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+#about-content ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+/* Services */
+
+#about-content p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    line-height: 1.8;
+}
+
+#about-content ul {
+    list-style: disc inside;
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+#about-content ul li {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
 /* Services */
 .service-grid {
     display: grid;
