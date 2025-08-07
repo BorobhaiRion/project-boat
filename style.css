@@ -1,0 +1,219 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.hero-wrapper {
+    background: url('bg.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+header {
+    background: transparent;
+    padding: 1rem 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container h1 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.logo {
+    height: 120px; /* Made bigger */
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Nicer touch */
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.logo:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.contact-info-header {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.contact-info-header p {
+    margin: 0;
+}
+
+.contact-info-header a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info-header a:hover {
+    text-decoration: underline;
+}
+
+/* Main Navigation */
+.main-nav {
+    background: #005f73;
+    padding: 1rem 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-nav ul li {
+    margin: 0 20px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-nav ul li a:hover {
+    color: #e0f7fa;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 10rem 0;
+}
+
+#hero h1,
+#hero p {
+    background-color: rgba(0, 0, 0, 0.4); /* Slight background for text */
+    backdrop-filter: blur(3px); /* Blur effect on text background */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block; /* To apply padding and border correctly */
+    margin-bottom: 1rem; /* Add some space between h1 and p */
+}
+
+#hero p {
+    margin-top: 0; /* Remove extra top margin for p */
+}
+
+#hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    background: #005f73;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #00343d;
+}
+
+/* Sections */
+section {
+    padding: 4rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+/* About Us */
+#about {
+    background: #f4f4f4;
+}
+
+/* Services */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-item {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Contact */
+#contact {
+    background: #f4f4f4;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #005f73;
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #00343d;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
