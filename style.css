@@ -22,6 +22,8 @@ body {
 /* Header */
 .hero-wrapper {
     background: url('bg.jpg') no-repeat center center/cover;
+    background-position: center center;
+    min-height: 100vh;
     color: #fff;
 }
 
@@ -458,8 +460,8 @@ footer {
 /* For screens smaller than 480px (smaller phones) */
 @media (max-width: 480px) {
     .hero-wrapper {
-        background-attachment: scroll;
-        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-size: cover;
     }
     .logo {
         height: 80px;
