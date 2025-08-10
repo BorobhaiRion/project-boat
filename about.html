@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - ANTARCTICO MARITIME</title>
+    <title>About Us - <span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero-wrapper">
@@ -12,12 +13,16 @@
             <div class="container header-content">
                 <div class="logo-container">
                     <a href="index.html" class="logo-link"><img src="images/logo.PNG" alt="ANTARCTICO MARITIME Logo" class="logo"></a>
-                    <h1>ANTARCTICO MARITIME</h1>
+                    <h1><span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span></h1>
                 </div>
-                <div class="contact-info-header">
-                    <p>Contact</p>
-                    <p>Gmail link: <a href="mailto:antarcticomaritime@gmail.com">antarcticomaritime@gmail.com</a></p>
-                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                
             </div>
         </header>
     </div>
@@ -39,10 +44,10 @@
     <section id="about-content">
         <div class="container">
             <h2>About Us</h2>
-            <p>ANTARCTICO MARITIME CO.</p>
+            <p><span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span> CO.</p>
             <p>OUR PURPOSE, OUR GOAL, OUR MISSION – all come back to two words: “CUSTOMER SERVICE.”</p>
             <p>From the quality products we offer to the professionalism of our team on emails and phones – everything we do is driven by our commitment to treating you the way we would like to be treated.</p>
-            <p>ANTARCTICO MARITIME CO. has grown into a leading ship chandler in Bangladesh, with nearly a decade of experience in supplying:</p>
+            <p><span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span> CO. has grown into a leading ship chandler in Bangladesh, with nearly a decade of experience in supplying:</p>
             <ul>
                 <li>Fresh & frozen provisions</li>
                 <li>Dried & canned foods, beverages, and dairy products</li>
@@ -60,7 +65,7 @@
                 <li>Car carriers</li>
                 <li>...and many more at Chittagong, Mongla, and Payra ports.</li>
             </ul>
-            <p>At ANTARCTICO MARITIME CO., we take pride in:</p>
+            <p>At <span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span> CO., we take pride in:</p>
             <ul>
                 <li>Meeting customer expectations</li>
                 <li>Providing reliable round-the-clock service</li>
@@ -71,8 +76,19 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 ANTARCTICO MARITIME. All Rights Reserved.</p>
+            <p>&copy; 2025 <span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span>. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('nav-open');
+            });
+        });
+    </script>
 </body>
 </html>

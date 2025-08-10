@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product - ANTARCTICO MARITIME</title>
+    <title>Product - <span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span></title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="hero-wrapper">
@@ -12,12 +13,16 @@
             <div class="container header-content">
                 <div class="logo-container">
                     <a href="index.html" class="logo-link"><img src="images/logo.PNG" alt="ANTARCTICO MARITIME Logo" class="logo"></a>
-                    <h1>ANTARCTICO MARITIME</h1>
+                    <h1><span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span></h1>
                 </div>
-                <div class="contact-info-header">
-                    <p>Contact</p>
-                    <p>Gmail link: <a href="mailto:antarcticomaritime@gmail.com">antarcticomaritime@gmail.com</a></p>
-                </div>
+                <button class="menu-toggle" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                
             </div>
         </header>
     </div>
@@ -39,63 +44,94 @@
     <section id="product-content">
         <div class="container">
             <h2>Our Products</h2>
-            <p>Products</p>
-            <p>Products & Spare Parts</p>
-            <p>Pumps</p>
-            <p>IMO</p>
-            <p>NANIWA</p>
-            <p>IRON</p>
-            <p>HYDAC</p>
-            <p>RICKMEIER</p>
-            <p>BOSCH</p>
-            <p>KIKAI</p>
-            <p>GRUNFOSS</p>
-            <p>HAMWORTHY</p>
-            <p>DESMI KRAL</p>
-            <p>KSB</p>
-            <p>LEISTRITZ etc.</p>
-            <p>Air Compressor</p>
-            <p>HATLAPA</p>
-            <p>CARRIER</p>
-            <p>SABROE</p>
-            <p>HAMWORTHY</p>
-            <p>SPERRE</p>
-            <p>SAUER & SOHN</p>
-            <p>TANABE</p>
-            <p>ABB</p>
-            <p>YORK</p>
-            <p>BITZER</p>
-            <p>SHOWA</p>
-            <p>ATLAS etc.</p>
-            <p>Main / Auxiliary Engines</p>
-            <p>MAN B&W</p>
-            <p>HYUNDAI</p>
-            <p>MITSUBISHI</p>
-            <p>MWM</p>
-            <p>WARTSILA</p>
-            <p>MAK</p>
-            <p>ROLLS ROYCE</p>
-            <p>DEUTZ – KHD</p>
-            <p>CATERPILLAR etc.</p>
-            <p>Purifiers / Separators</p>
-            <p>ALFA LAVAL</p>
-            <p>MITSUBISHI</p>
-            <p>RWO</p>
-            <p>WESTFALIA</p>
-            <p>BLOHM & VOSS</p>
-            <p>Turbochargers</p>
-            <p>ABB/BBC/VTR</p>
-            <p>MET</p>
-            <p>TCU</p>
-            <p>BARTECH</p>
-            <p>HYUNDAI etc.</p>
+            <h3>Products & Spare Parts</h3>
+            <ul class="product-list">
+                <li>Pumps
+                    <ul>
+                        <li>IMO</li>
+                        <li>NANIWA</li>
+                        <li>IRON</li>
+                        <li>HYDAC</li>
+                        <li>RICKMEIER</li>
+                        <li>BOSCH</li>
+                        <li>KIKAI</li>
+                        <li>GRUNFOSS</li>
+                        <li>HAMWORTHY</li>
+                        <li>DESMI KRAL</li>
+                        <li>KSB</li>
+                        <li>LEISTRITZ</li>
+                        <li>etc.</li>
+                    </ul>
+                </li>
+                <li>Air Compressor
+                    <ul>
+                        <li>HATLAPA</li>
+                        <li>CARRIER</li>
+                        <li>SABROE</li>
+                        <li>HAMWORTHY</li>
+                        <li>SPERRE</li>
+                        <li>SAUER & SOHN</li>
+                        <li>TANABE</li>
+                        <li>ABB</li>
+                        <li>YORK</li>
+                        <li>BITZER</li>
+                        <li>SHOWA</li>
+                        <li>ATLAS</li>
+                        <li>etc.</li>
+                    </ul>
+                </li>
+                <li>Main / Auxiliary Engines
+                    <ul>
+                        <li>MAN B&W</li>
+                        <li>HYUNDAI</li>
+                        <li>MITSUBISHI</li>
+                        <li>MWM</li>
+                        <li>WARTSILA</li>
+                        <li>MAK</li>
+                        <li>ROLLS ROYCE</li>
+                        <li>DEUTZ – KHD</li>
+                        <li>CATERPILLAR</li>
+                        <li>etc.</li>
+                    </ul>
+                </li>
+                <li>Purifiers / Separators
+                    <ul>
+                        <li>ALFA LAVAL</li>
+                        <li>MITSUBISHI</li>
+                        <li>RWO</li>
+                        <li>WESTFALIA</li>
+                        <li>BLOHM & VOSS</li>
+                    </ul>
+                </li>
+                <li>Turbochargers
+                    <ul>
+                        <li>ABB/BBC/VTR</li>
+                        <li>MET</li>
+                        <li>TCU</li>
+                        <li>BARTECH</li>
+                        <li>HYUNDAI</li>
+                        <li>etc.</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 ANTARCTICO MARITIME. All Rights Reserved.</p>
+            <p>&copy; 2025 <span style="font-family: 'Archivo Black', sans-serif;">ANTARCTICO MARITIME</span>. All Rights Reserved.</p>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mainNav = document.querySelector('.main-nav');
+
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('nav-open');
+            });
+        });
+    </script>
 </body>
 </html>

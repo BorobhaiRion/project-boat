@@ -211,6 +211,50 @@ section h2 {
     text-align: center;
 }
 
+#product-content .product-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 25px; /* Spacing between items */
+}
+
+#product-content .product-list > li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+#product-content .product-list > li:hover {
+    transform: translateY(-5px);
+}
+
+#product-content .product-list > li h3 {
+    color: #005f73;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.8em; /* Increased font size */
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+#product-content .product-list ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#product-content .product-list ul li {
+    margin-bottom: 5px;
+    font-size: 0.95em;
+    color: #555;
+    font-weight: normal; /* Ensure nested items are not bolded */
+}
+
 /* Contact */
 #contact {
     background: #f4f4f4;
@@ -296,4 +340,158 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    z-index: 1000;
+    display: none; /* Hidden by default on larger screens */
+}
+
+.hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .container.header-content {
+        flex-direction: row; /* Keep row for header content */
+        justify-content: space-between; /* Space out logo and toggle */
+        align-items: center;
+    }
+
+    .logo-container {
+        margin-bottom: 0; /* Remove margin */
+    }
+
+    .contact-info-header {
+        margin-top: 1rem;
+    }
+
+    .menu-toggle {
+        display: block; /* Show the menu toggle button */
+    }
+
+    .main-nav {
+        display: none; /* Hide navigation by default on small screens */
+        flex-direction: column;
+        width: 100%;
+        position: absolute; /* Position relative to parent */
+        top: 100px; /* Adjust based on header height */
+        left: 0;
+        background: #005f73; /* Same as nav background */
+        z-index: 999; /* Ensure it's on top */
+        max-height: calc(100vh - 100px); /* Max height to prevent overflow */
+        overflow-y: auto; /* Enable scrolling for long menus */
+        transition: transform 0.3s ease-out; /* Smooth slide effect */
+        transform: translateY(-100%); /* Start off-screen above */
+    }
+
+    .main-nav.nav-open {
+        display: flex; /* Show navigation when nav-open class is present */
+        transform: translateY(0); /* Slide into view */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #hero {
+        padding: 5rem 0;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Stack services in a single column */
+    }
+
+    .contact-details-bar {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+    }
+
+    .contact-item:last-child {
+        border-bottom: none;
+    }
+}
+
+/* For screens smaller than 480px (smaller phones) */
+@media (max-width: 480px) {
+    .logo {
+        height: 80px;
+    }
+
+    .logo-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info-header {
+        font-size: 0.9rem;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+      .cta-button {
+        padding: 0.8rem 1rem;
+        font-size: 0.9rem;
+        white-space: normal;
+        width: fit-content;
+        margin: 0 auto;
+    }
 }
