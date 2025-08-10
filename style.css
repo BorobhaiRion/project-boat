@@ -41,9 +41,8 @@ header {
 }
 
 .logo {
-    height: 120px; /* Made bigger */
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Nicer touch */
+    height: 150px; /* Made bigger */
+    
     transition: all 0.3s ease; /* Smooth transition for hover */
 }
 
@@ -107,9 +106,9 @@ header {
 
 #hero h1,
 #hero p {
-    background-color: rgba(0, 0, 0, 0.4); /* Slight background for text */
-    backdrop-filter: blur(3px); /* Blur effect on text background */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 20px #000;
     padding: 10px 20px;
     border-radius: 8px;
     display: inline-block; /* To apply padding and border correctly */
@@ -458,6 +457,10 @@ footer {
 
 /* For screens smaller than 480px (smaller phones) */
 @media (max-width: 480px) {
+    .hero-wrapper {
+        background-attachment: scroll;
+        background-size: 100% 100%;
+    }
     .logo {
         height: 80px;
     }
